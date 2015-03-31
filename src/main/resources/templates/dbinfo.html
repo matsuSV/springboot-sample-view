@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Connect</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<script src="/javascript/jquery-1.11.1.js"></script>
+<script src="/javascript/querytester/event.js"></script>
+<link rel="stylesheet" type="text/css" href="/css/querytester.css"/>
+</head>
+<body>
+	<p>Connect Database Information</p>
+	<div class="dbConnectionForm">
+		<p>左側のDB接続情報</p>
+		<p>
+			Driver Class：<input type="text" name="clazz" id="l_clazz" />
+		</p>
+		<p>
+			URL：<input type="text" name="url" id="l_id" />
+		</p>
+		<p>
+			User Name：<input type="text" name="user" id="l_user" />
+		</p>
+		<p>
+			Password：<input type="text" name="password" id="l_password" />
+		</p>
+		<p>
+			DB2v10ドライバを使用する場合はチェックしてください：<input type="checkbox"
+				name="db2v10driver" id="l_db2v10driver" />
+		</p>
+		<p>
+			<input type="button" value="connect"
+				onclick="verifyConnection('l_clazz', 'l_id', 'l_user', 'l_password', 'l_db2v10driver')" />
+		</p>
+
+	</div>
+
+	<div class="dbConnectionForm">
+		<p>右側のDB接続情報</p>
+		<p>
+			Driver Class：<input type="text" name="clazz" id="r_clazz" />
+		</p>
+		<p>
+			URL：<input type="text" name="url" id="r_id" />
+		</p>
+		<p>
+			User Name：<input type="text" name="user" id="r_user" />
+		</p>
+		<p>
+			Password：<input type="text" name="password" id="r_password" />
+		</p>
+		<p>
+			DB2v10ドライバを使用する場合はチェックしてください：<input type="checkbox"
+				name="db2v10driver" id="r_db2v10driver" />
+		</p>
+		<p>
+			<input type="button" value="connect"
+				onclick="verifyConnection('r_clazz', 'r_id', 'r_user', 'r_password', 'r_db2v10driver')" />
+		</p>
+	</div>
+
+</body>
+
+</html>
